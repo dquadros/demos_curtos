@@ -4,6 +4,13 @@ This example shows how to configure the Zigbee end device and use it as a Home A
 
 **This example is based on ESP-Zigbee-SDK example esp_zigbee_HA_sample/HA_on_off_light.**
 
+# Adaptações e Notas by DQ
+
+* O código foi adaptado e testado para uso com o XIAO ESP32-C6
+* Utiliza o LED interno à placa
+* Embora não devesse ser necessário, estou selecionando a antena interna
+* Conforme descrito na documentação, apague a Flash se você for usar com um novo Coordinator (inclusive se for o mesmo hardware mas você regravou o software).
+
 # Supported Targets
 
 Currently, this example supports the following targets.

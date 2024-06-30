@@ -4,6 +4,13 @@ This example shows how to configure Zigbee Coordinator and use it as a Home Auto
 
 **This example is based on ESP-Zigbee-SDK example esp_zigbee_HA_sample/HA_on_off_switch.**
 
+# Adaptações e Notas by DQ
+
+* O código foi adaptado e testado para uso com o XIAO ESP32-C6
+* O botão deve ser conectado entre os pinos GND e D9
+* Embora não devesse ser necessário, estou selecionando a antena interna
+* Atenção que o parâmetro de `esp_zb_bdb_open_network` é um byte, com valor máximo 255.
+
 # Supported Targets
 
 Currently, this example supports the following targets.

@@ -163,8 +163,8 @@ void esp_zb_app_signal_handler(esp_zb_app_signal_t *signal_struct) {
           esp_zb_bdb_start_top_level_commissioning(ESP_ZB_BDB_MODE_NETWORK_FORMATION);
         } else {
           log_i("Device rebooted");
-          log_i("Openning network for joining for %d seconds", 360);
-          esp_zb_bdb_open_network(360);
+          log_i("Openning network for joining for %d seconds", 180);
+          esp_zb_bdb_open_network(180);
         }
       } else {
         log_e("Failed to initialize Zigbee stack (status: %s)", esp_err_to_name(err_status));
@@ -241,6 +241,11 @@ static void switch_gpios_intr_enabled(bool enabled) {
 
 /********************* Arduino functions **************************/
 void setup() {
+
+  // Seleciona antena interna
+  pinMode(14, OUTPUT); 
+  digitalWrite(14, LOW);  
+  
   // Init Zigbee
   esp_zb_platform_config_t config = {
     .radio_config = ESP_ZB_DEFAULT_RADIO_CONFIG(),
@@ -248,6 +253,8 @@ void setup() {
   };
 
   ESP_ERROR_CHECK(esp_zb_platform_config(&config));
+
+  //esp_zb_zcl_reset_nvram_to_factory_default();
 
   // Init button switch
   for (int i = 0; i < PAIR_SIZE(button_func_pair); i++) {
