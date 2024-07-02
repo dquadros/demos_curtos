@@ -1,0 +1,202 @@
+
+epaper.elf:     file format elf32-littleriscv
+
+SYMBOL TABLE:
+00000000 l    d  .init	00000000 .init
+000000a0 l    d  .text	00000000 .text
+0000172c l    d  .fini	00000000 .fini
+20000000 l    d  .dalign	00000000 .dalign
+0000172c l    d  .dlalign	00000000 .dlalign
+20000000 l    d  .data	00000000 .data
+20000008 l    d  .bss	00000000 .bss
+00000000 l    d  .riscv.attributes	00000000 .riscv.attributes
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_line_str	00000000 .debug_line_str
+00000000 l    df *ABS*	00000000 
+0000011e l     F .text	0000009c mini_pad
+000001ba l     F .text	00000016 DelaySysTick
+000001d0 l     F .text	000000be mini_itoa.part.0
+0000028e l     F .text	00000036 epd_wait_busy
+000002c4 l     F .text	00000040 epd_write_cmd
+00000304 l     F .text	00000036 epd_write_data
+0000033a l     F .text	0000007c epd_send_screen
+00000f2c l     O .text	00000800 fontdata
+000003b6 l     F .text	00000022 epd_setpos.constprop.0
+000003d8 l     F .text	000000ee epd_refresh
+000004c6 l     F .text	0000000a internal_handle_input.constprop.0
+000004d0 l     F .text	000000d2 _write.constprop.0
+000005a2 l     F .text	00000014 __puts_uart
+0000064c l     F .text	000001ae mini_vpprintf
+00000832 l     F .text	0000000e epd_clear
+0000085c l     F .text	00000034 epd_write
+00000000 l     F .init	0000009c InterruptVectorDefault
+20000008 l     O .bss	00000271 screen
+20000000 l     O .data	00000001 hibernating
+00000000 l    df *ABS*	00000000 div.o
+000000a0 l       .text	00000000 $xrv32e1p9_c2p0
+00000000 l    df *ABS*	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+0000196f l       .debug_info	00000000 
+00000000 l    df *ABS*	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000280a l       .debug_info	00000000 
+0000196f  w      .debug_info	00000000 .hidden ch32v003fun.c.efcfd04d
+000007fa g     F .text	00000026 printf
+20000800 g       .data	00000000 __global_pointer$
+0000062a g     F .text	00000002 TIM1_CC_IRQHandler
+0000062a g     F .text	00000002 HardFault_Handler
+0000062a g     F .text	00000002 SysTick_Handler
+0000062a g     F .text	00000002 PVD_IRQHandler
+0000062c g     F .text	0000000e NMI_Handler
+20000008 g       .bss	00000000 _sbss
+00000840 g     F .text	0000001c memcpy
+00000000 g     F .init	0000009c InterruptVector
+000000a8 g     F .text	0000002c .hidden __hidden___udivsi3
+0000280a  w      .debug_info	00000000 .hidden epaper.c.a43bb547
+000000a8 g     F .text	0000002c .hidden __udivsi3
+000000a0 g       .init	00000000 _einit
+0000062a g     F .text	00000002 SPI1_IRQHandler
+0000062a g     F .text	00000002 AWU_IRQHandler
+0000062a g     F .text	00000002 EXTI7_0_IRQHandler
+0000062a g     F .text	00000002 DMA1_Channel4_IRQHandler
+0000062a g     F .text	00000002 ADC1_IRQHandler
+2000027c g       .bss	00000000 _ebss
+0000062a g     F .text	00000002 DMA1_Channel7_IRQHandler
+000000d4 g     F .text	00000008 .hidden __umodsi3
+0000062a g     F .text	00000002 I2C1_EV_IRQHandler
+0000062a g     F .text	00000002 DMA1_Channel6_IRQHandler
+0000062a g     F .text	00000002 RCC_IRQHandler
+0000062a g     F .text	00000002 TIM1_TRG_COM_IRQHandler
+0000062a g     F .text	00000002 DMA1_Channel1_IRQHandler
+0000062a g     F .text	00000002 DefaultIRQHandler
+20000000 g       .dalign	00000000 _data_vma
+0000062c g     F .text	0000000e NMI_RCC_CSS_IRQHandler
+00000820 g     F .text	00000012 memset
+000008e8 g     F .text	000002d2 main
+0000062a g     F .text	00000002 DMA1_Channel5_IRQHandler
+000000a0 g     F .text	00000058 .hidden __divsi3
+00000890 g     F .text	00000058 SystemInit
+00000000 g       .init	00000000 _sinit
+0000062a g     F .text	00000002 DMA1_Channel3_IRQHandler
+0000062a g     F .text	00000002 TIM1_UP_IRQHandler
+0000062a g     F .text	00000002 WWDG_IRQHandler
+0000062a g     F .text	00000002 TIM2_IRQHandler
+20000800 g       .bss	00000000 _eusrstack
+0000062a g     F .text	00000002 SW_Handler
+0000062a g     F .text	00000002 TIM1_BRK_IRQHandler
+20000008 g       .data	00000000 _edata
+0000172c g       .dlalign	00000000 _data_lma
+000000f8 g     F .text	00000024 .hidden __modsi3
+0000062a g     F .text	00000002 DMA1_Channel2_IRQHandler
+000005b6 g     F .text	00000074 handle_reset
+0000062a g     F .text	00000002 FLASH_IRQHandler
+0000062a g     F .text	00000002 USART1_IRQHandler
+0000063a g     F .text	00000012 strlen
+0000062a g     F .text	00000002 I2C1_ER_IRQHandler
+
+
