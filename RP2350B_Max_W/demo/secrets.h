@@ -1,0 +1,2 @@
+#define ESSID    ""
+#define PASSWORD ""
